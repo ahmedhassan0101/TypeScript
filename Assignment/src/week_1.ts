@@ -6,7 +6,10 @@ function calculate(numOne: number, numTwo: number) {
 console.log(calculate(10, 20)); // 30
 // console.log(calculate("10", "20")); // We Don't Need This To Work
 console.log(calculate(+true, +true)); // 2
-
+//
+//!>= >=============================================================< <= //
+//!>= >=============================================================< <= //
+//
 //*[2]
 
 function printInfo(valueOne: number | string, valueTwo: number | string) {
@@ -16,14 +19,20 @@ function printInfo(valueOne: number | string, valueTwo: number | string) {
 console.log(printInfo(10, 20)); // Value One Is 10, Value Two Is 20
 console.log(printInfo("10", "20")); // Value One Is "10", Value Two Is "20"
 // console.log(printInfo(true, [1, 2, 3])); // We Don't Need This To Work
-
+//
+//!>= >=============================================================< <= //
+//!>= >=============================================================< <= //
+//
 //*[3]
 let arr: (number | boolean[] | (string | (string | number)[])[])[] = [
   1,
   [true, false],
   ["A", ["B", 1]],
 ];
-
+//
+//!>= >=============================================================< <= //
+//!>= >=============================================================< <= //
+//
 //*[4]
 function reportErrors(username, age: number) {
   let rank = "Professor";
@@ -32,7 +41,10 @@ function reportErrors(username, age: number) {
 }
 
 console.log(reportErrors("Elzero", 40));
-
+//
+//!>= >=============================================================< <= //
+//!>= >=============================================================< <= //
+//
 //*[5]
 let nothing;
 let theName: string = "Elzero";
@@ -41,8 +53,11 @@ function showMyDetails(a = "", b = "", c) {
 }
 
 // Replace ???? With The Available Variables As Argument To Get The Result
-console.log(showMyDetails(nothing, nothing,theName)); // Elzero
-
+console.log(showMyDetails(nothing, nothing, theName)); // Elzero
+//
+//!>= >=============================================================< <= //
+//!>= >=============================================================< <= //
+//
 //*[6]
 function showMsg(user?: string, age?: any, country?: string) {
   return `${user}${age}${country}`;
@@ -52,22 +67,24 @@ console.log(showMsg());
 console.log(showMsg("Elzero"));
 console.log(showMsg("Elzero", 40));
 console.log(showMsg("Elzero", "40", "Egypt"));
-
+//
+//!>= >=============================================================< <= //
+//!>= >=============================================================< <= //
+//
 //*[7]
 // Write The Function Here
-const printInConsole = (...argument: (string| number| boolean)[]) => {
-
-  argument.forEach(argu => {
+const printInConsole = (...argument: (string | number | boolean)[]) => {
+  argument.forEach((argu) => {
     if (typeof argu === "number") {
-      console.log(`The Value Is ${argu} And Type Is number`)
+      console.log(`The Value Is ${argu} And Type Is number`);
     } else if (typeof argu === "string") {
-      console.log(`The Value Is ${argu} And Type Is string`)
+      console.log(`The Value Is ${argu} And Type Is string`);
     } else if (typeof argu === "boolean") {
-      console.log(`The Value Is ${argu} And Type Is bollean`)
+      console.log(`The Value Is ${argu} And Type Is bollean`);
     }
   });
-  return "Done"
-}
+  return "Done";
+};
 
 // Using The Function => Do Not Edit
 console.log(printInConsole(1, 2, 3, 4, 5));
