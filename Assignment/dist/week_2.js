@@ -1,4 +1,5 @@
 "use strict";
+console.log("(========== Week Two ==========)");
 // Do Not Edit Here
 let myData;
 myData = 1000; // No Problem Here

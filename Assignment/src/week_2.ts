@@ -1,3 +1,4 @@
+console.log("(========== Week Two ==========)")
 //*[1]
 // Write Your Code Here
 type n = number;

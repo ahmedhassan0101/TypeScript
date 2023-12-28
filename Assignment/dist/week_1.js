@@ -1,4 +1,5 @@
 "use strict";
+console.log("(========== Week One ==========)");
 //*[1]
 function calculate(numOne, numTwo) {
     return numOne + numTwo;

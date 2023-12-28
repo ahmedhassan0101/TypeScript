@@ -1,5 +1,5 @@
+console.log("(========== Week One ==========)")
 //*[1]
-
 function calculate(numOne: number, numTwo: number) {
   return numOne + numTwo;
 }
@@ -11,11 +11,9 @@ console.log(calculate(+true, +true)); // 2
 //!>= >=============================================================< <= //
 //
 //*[2]
-
 function printInfo(valueOne: number | string, valueTwo: number | string) {
   return `Value One Is ${valueOne}, Value Two Is ${valueTwo}`;
 }
-
 console.log(printInfo(10, 20)); // Value One Is 10, Value Two Is 20
 console.log(printInfo("10", "20")); // Value One Is "10", Value Two Is "20"
 // console.log(printInfo(true, [1, 2, 3])); // We Don't Need This To Work
@@ -39,7 +37,6 @@ function reportErrors(username, age: number) {
   return `Username: ${username}`;
   console.log("We Will Not Reach Here");
 }
-
 console.log(reportErrors("Elzero", 40));
 //
 //!>= >=============================================================< <= //
@@ -85,14 +82,11 @@ const printInConsole = (...argument: (string | number | boolean)[]) => {
   });
   return "Done";
 };
-
 // Using The Function => Do Not Edit
 console.log(printInConsole(1, 2, 3, 4, 5));
 console.log(printInConsole("A", "B", "C"));
-console.log(printInConsole(true, false, false, true, true));
-
+console.log(printInConsole(true, false, false, true, true))
 // Output
-
 /*
 The Value Is 1 And Type Is number
 The Value Is 2 And Type Is number
