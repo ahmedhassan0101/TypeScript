@@ -131,6 +131,15 @@ const errorBag: ErrorContainer = {
   email: "Not a valid email!",
   username: "Must start with a capital character!",
 };
+
+interface Person {
+  [ket: string]: any;
+}
+const user: Person = {
+  name: "Ahmed",
+  age: 20,
+};
+user.birthDate = "1999-01-01";
 //*
 //*
 //! [4] Optional Chaining.
